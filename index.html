@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Olimpia Games</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Barra de navegación -->
+    <nav>
+      <div class="logo-container">
+        <span>Olimpia Games</span>
+      </div>
+
+      <ul class="nav-links">
+        <li><a href="#catalogo">Catálogo</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+        <li><a href="#torneo" class="active">Torneo</a></li>
+        <li><a href="#about">About</a></li>
+      </ul>
+    </nav>
+
+    <div class="main-content">
+      <!-- Sección Catálogo -->
+      <section id="catalogo">
+        <h1>Nuestro Catálogo de Juegos</h1>
+        <p>
+          Descubre los juegos más emocionantes para competir en nuestros
+          torneos.
+        </p>
+
+        <div class="games-grid">
+          <div class="game-card">
+            <img src="img/fifa23.jpg" alt="FIFA 23" class="game-image" />
+            <div class="game-info">
+              <h3 class="game-title">FIFA 23</h3>
+              <p>El mejor simulador de fútbol del mundo</p>
+              <p class="game-price">$59.99</p>
+            </div>
+          </div>
+
+          <div class="game-card">
+            <img src="img/valorant.jpg" alt="Valorant" class="game-image" />
+            <div class="game-info">
+              <h3 class="game-title">Valorant</h3>
+              <p>Shooter táctico 5v5 con personajes únicos</p>
+              <p class="game-price">Gratuito</p>
+            </div>
+          </div>
+
+          <div class="game-card">
+            <img src="img/fortnite.jpg" alt="Fortnite" class="game-image" />
+            <div class="game-info">
+              <h3 class="game-title">Fortnite</h3>
+              <p>Battle Royale con construcción y eventos exclusivos</p>
+              <p class="game-price">Gratuito</p>
+            </div>
+          </div>
+
+          <div class="game-card">
+            <img src="img/calld.jpg" alt="Call of Duty" class="game-image" />
+            <div class="game-info">
+              <h3 class="game-title">Call of Duty: Warzone</h3>
+              <p>Battle Royale intenso con gráficos de última generación</p>
+              <p class="game-price">Gratuito</p>
+            </div>
+          </div>
+
+          <div class="game-card">
+            <img src="img/lol.jpg" alt="League of Legends" class="game-image" />
+            <div class="game-info">
+              <h3 class="game-title">League of Legends</h3>
+              <p>MOBA competitivo con más de 150 campeones</p>
+              <p class="game-price">Gratuito</p>
+            </div>
+          </div>
+
+          <div class="game-card">
+            <img src="img/rocketl.jpg" alt="Rocket League" class="game-image" />
+            <div class="game-info">
+              <h3 class="game-title">Rocket League</h3>
+              <p>Fútbol con coches acrobáticos</p>
+              <p class="game-price">$19.99</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Sección Torneo -->
+      <section id="torneo">
+        <h2>Inscripción al Torneo</h2>
+        <p>
+          Participa en nuestros torneos y demuestra tu habilidad. Completa el
+          formulario para inscribirte.
+        </p>
+
+        <div class="registration-form">
+          <form id="inscripcionForm">
+            <div class="form-group">
+              <label for="nombre">Nombre completo:</label>
+              <input type="text" id="nombre" name="nombre" required />
+              <div class="error" id="nombreError">
+                Por favor ingresa tu nombre completo
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="email">Correo electrónico:</label>
+              <input type="email" id="email" name="email" required />
+              <div class="error" id="emailError">
+                Por favor ingresa un correo válido
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="fechaNacimiento">Fecha de nacimiento:</label>
+              <input
+                type="date"
+                id="fechaNacimiento"
+                name="fechaNacimiento"
+                required
+              />
+              <div class="error" id="edadError">
+                Debes tener al menos 14 años para inscribirte
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="torneo">Selecciona el torneo:</label>
+              <select id="Torneo" name="torneo" required>
+                <option value="">-- Selecciona un torneo --</option>
+                <option value="fifa">Torneo FIFA 23 - $20</option>
+                <option value="valorant">Torneo Valorant - $30</option>
+                <option value="fortnite">Torneo Fortnite - $25</option>
+                <option value="cod">Torneo Call of Duty - $35</option>
+                <option value="lol">Torneo League of Legends - $30</option>
+              </select>
+              <div class="error" id="torneoError">
+                Por favor selecciona un torneo
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="montoPagado">Monto pagado ($):</label>
+              <input
+                type="number"
+                id="montoPagado"
+                name="montoPagado"
+                min="0"
+                step="0.01"
+                required
+              />
+              <div class="error" id="pagoError">
+                El monto debe ser igual o mayor al costo del torneo
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="comentarios">Comentarios adicionales:</label>
+              <textarea id="comentarios" name="comentarios" rows="4"></textarea>
+            </div>
+
+            <div class="form-group">
+              <input type="submit" value="Inscribirse" />
+            </div>
+          </form>
+        </div>
+      </section>
+
+      <!-- Sección Contacto -->
+      <section id="contacto">
+        <h2>Contacto</h2>
+        <p>¿Tienes preguntas? Contáctanos a través de los siguientes medios:</p>
+
+        <div class="contact-info">
+          <div class="contact-card">
+            <h3>Información de contacto</h3>
+            <p><strong>Teléfono:</strong> +1 (555) 123-4567</p>
+            <p><strong>Email:</strong> info@olimpiagames.com</p>
+            <p>
+              <strong>Horario:</strong> Lunes a Viernes de 9:00 am a 6:00 pm
+            </p>
+          </div>
+
+          <div class="contact-card">
+            <h3>Ubicación</h3>
+            <p>
+              <strong>Dirección:</strong> Calle del Gaming 123, Ciudad Esports
+            </p>
+            <p><strong>Localidad:</strong> Zona Gamer, CP 54321</p>
+            <p><strong>País:</strong> República de los Gamers</p>
+          </div>
+
+          <div class="contact-card">
+            <h3>Redes Sociales</h3>
+            <p><strong>Twitter:</strong> @OlimpiaGames</p>
+            <p><strong>Instagram:</strong> @OlimpiaGames</p>
+            <p><strong>Discord:</strong> discord.gg/olimpiagames</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Sección About -->
+      <section id="about">
+        <h2>Sobre Olimpia Games</h2>
+        <p>
+          Olimpia Games es la plataforma líder en organización de torneos de
+          esports en la región. Fundada en 2018, nos hemos dedicado a crear
+          experiencias competitivas de alta calidad para jugadores de todos los
+          niveles.
+        </p>
+
+        <h3>Nuestra Misión</h3>
+        <p>
+          Promover el espíritu deportivo en el mundo de los esports,
+          proporcionando un ambiente competitivo pero inclusivo donde los
+          jugadores puedan demostrar sus habilidades, hacer nuevos amigos y
+          disfrutar de su pasión por los videojuegos.
+        </p>
+
+        <h3>Nuestros Valores</h3>
+        <ul style="margin-left: 2rem; margin-bottom: 1rem">
+          <li>Juego limpio y deportividad</li>
+          <li>Inclusión y diversidad</li>
+          <li>Innovación constante</li>
+          <li>Pasión por los esports</li>
+          <li>Excelencia en organización</li>
+        </ul>
+
+        <h3>Nuestro Equipo</h3>
+        <p>
+          Contamos con un equipo de profesionales apasionados por los
+          videojuegos y con amplia experiencia en la organización de eventos
+          competitivos. Desde expertos en logística hasta comentaristas
+          profesionales, todos compartimos la misma visión: hacer de Olimpia
+          Games el referente en torneos de esports.
+        </p>
+      </section>
+    </div>
+
+    <!-- Modal -->
+    <div id="resultModal" class="modal">
+      <div class="modal-content">
+        <span class="close-btn" id="closeModal">&times;</span>
+        <h3 id="modalTitle">Resultado de Inscripción</h3>
+        <p id="modalMessage"></p>
+        <div id="detallePago"></div>
+      </div>
+    </div>
+
+    <footer>
+      <p>© 2023 Olimpia Games. Todos los derechos reservados.</p>
+      <p>Desarrollado por el equipo de Olimpia Games</p>
+    </footer>
+
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <script src="script.js"></script>
+  </body>
+</html>
