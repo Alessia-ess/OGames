@@ -17,6 +17,7 @@
         <li><a href="#catalogo">Catálogo</a></li>
         <li><a href="#contacto">Contacto</a></li>
         <li><a href="#torneo" class="active">Torneo</a></li>
+        <li><a href="#game">Game</a></li>
         <li><a href="#about">About</a></li>
       </ul>
     </nav>
@@ -35,7 +36,7 @@
             <img src="img/fifa23.jpg" alt="FIFA 23" class="game-image" />
             <div class="game-info">
               <h3 class="game-title">FIFA 23</h3>
-              <p>El mejor simulador de fútbol del mundo</p>
+              <p>¡VIVE LA EMOCIÓN DEL FÚTBOL COMO NUNCA ANTES!</p>
               <p class="game-price">$59.99</p>
             </div>
           </div>
@@ -44,7 +45,7 @@
             <img src="img/valorant.jpg" alt="Valorant" class="game-image" />
             <div class="game-info">
               <h3 class="game-title">Valorant</h3>
-              <p>Shooter táctico 5v5 con personajes únicos</p>
+              <p>¡PRESICIÓN ESTRATEGIA Y HABILIDADES ÚNICAS!</p>
               <p class="game-price">Gratuito</p>
             </div>
           </div>
@@ -53,7 +54,7 @@
             <img src="img/fortnite.jpg" alt="Fortnite" class="game-image" />
             <div class="game-info">
               <h3 class="game-title">Fortnite</h3>
-              <p>Battle Royale con construcción y eventos exclusivos</p>
+              <p>¡EL JUEGO QUE LO TIENE TODO!</p>
               <p class="game-price">Gratuito</p>
             </div>
           </div>
@@ -62,7 +63,7 @@
             <img src="img/calld.jpg" alt="Call of Duty" class="game-image" />
             <div class="game-info">
               <h3 class="game-title">Call of Duty: Warzone</h3>
-              <p>Battle Royale intenso con gráficos de última generación</p>
+              <p>¡VIVE LA EXPERIENCIA DEFINITIVA DE GUERRA MODERNA!</p>
               <p class="game-price">Gratuito</p>
             </div>
           </div>
@@ -71,7 +72,7 @@
             <img src="img/lol.jpg" alt="League of Legends" class="game-image" />
             <div class="game-info">
               <h3 class="game-title">League of Legends</h3>
-              <p>MOBA competitivo con más de 150 campeones</p>
+              <p>EL JUEGO COMPETITIVO MÁS POPULAR DEL MUNDO</p>
               <p class="game-price">Gratuito</p>
             </div>
           </div>
@@ -80,8 +81,34 @@
             <img src="img/rocketl.jpg" alt="Rocket League" class="game-image" />
             <div class="game-info">
               <h3 class="game-title">Rocket League</h3>
-              <p>Fútbol con coches acrobáticos</p>
+              <p>¡FÚTBOL CAÓTICO CON COCHES VOLADORES!</p>
               <p class="game-price">$19.99</p>
+            </div>
+          </div>
+
+          <div class="game-card">
+            <img
+              src="img/dota2.jpg"
+              alt="League of Legends"
+              class="game-image"
+            />
+            <div class="game-info">
+              <h3 class="game-title">Dota 2</h3>
+              <p>DOMINA EL JUEGO QUE DEFINE EL ESPORTS EN DOTA 2</p>
+              <p class="game-price">Gratuito</p>
+            </div>
+          </div>
+
+          <div class="game-card">
+            <img
+              src="img/alegends.jpg"
+              alt="League of Legends"
+              class="game-image"
+            />
+            <div class="game-info">
+              <h3 class="game-title">Apex Legends</h3>
+              <p>¡BATTLE ROYALE ÉPICO! DOMINA LA ARENA CON ESTE JUEGO</p>
+              <p class="game-price">Gratuito</p>
             </div>
           </div>
         </div>
@@ -201,6 +228,26 @@
         </div>
       </section>
 
+      <!-- Sección Game - Garbage Collector -->
+      <section id="game">
+        <h2>Garbage Collector</h2>
+        <p>
+          Ayuda al estudiante a recolectar toda la basura en 60 segundos para
+          pasar al siguiente nivel.
+        </p>
+
+        <div class="game-container">
+          <div class="game-info">
+            <p>Tiempo: <span id="time">60</span>s</p>
+            <p>Basura recolectada: <span id="score">0</span>/10</p>
+            <p>Nivel: <span id="level">1</span></p>
+          </div>
+          <canvas id="gameCanvas" width="800" height="500"></canvas>
+          <button id="startButton" class="game-button">Comenzar Juego</button>
+          <div id="message" class="game-message"></div>
+        </div>
+      </section>
+
       <!-- Sección About -->
       <section id="about">
         <h2>Sobre Olimpia Games</h2>
@@ -256,5 +303,6 @@
 
     <link rel="stylesheet" href="CSS/styles.css" />
     <script src="SCRIPT/script.js"></script>
+    <script src="SCRIPT/game.js"></script>
   </body>
 </html>
